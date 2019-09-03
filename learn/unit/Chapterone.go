@@ -8,7 +8,6 @@ func learnmap(){
 	ff.Println("process private method")
 }
 
-
 func LearnMap(){
 	// init map
 	_dict := make(map[string]int)
