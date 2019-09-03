@@ -4,19 +4,29 @@ package unit
 import ff "fmt"
 
 // 方法名首字母小写 私有方法
-func learnmap(){
+func learnmap() {
 	ff.Println("process private method")
 }
 
-func LearnMap(){
+func LearnMap() {
 	// init map
 	_dict := make(map[string]int)
 	_dict["key"] = 0
-	println("_dict key:",_dict["key"])
+	println("_dict key:", _dict["key"])
 
 	// init map
-	m := map[string]int{"one":1}
+	m := map[string]int{"one": 1}
 	// print map key:one
-	println("map:",m["one"])
+	println("map:", m["one"])
 	learnmap()
+}
+
+// defer 会延迟函数的执行 直到上层函数返回
+// 多个defer修饰的命令  后入先出
+func LearnDefer() {
+	ff.Println("start LearnDefer")
+	for i := 0; i < 10; i++ {
+		defer ff.Println(i)
+	}
+	ff.Println("end")
 }
