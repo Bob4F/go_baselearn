@@ -28,6 +28,11 @@ func main() {
 	H, N := method.MoreReturn()
 	fmt.Println(H, N)
 
+	jsonmap := make(map[string]int)
+	method.Method3("key", 1, 2, jsonmap)
+	fmt.Println("JSONMAP", jsonmap["key"])
+
 	// 数组
 	unit.Arr()
+
 }
