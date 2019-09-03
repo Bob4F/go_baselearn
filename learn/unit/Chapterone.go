@@ -3,6 +3,18 @@ package unit
 // 自命名包ff
 import ff "fmt"
 
+const DEV_NAME = "Lucas"
+
+const (
+	Unknow = 0
+	Female = 1
+	Male   = 2
+)
+
+func PringDevName() {
+	ff.Println(DEV_NAME)
+}
+
 // 方法名首字母小写 私有方法
 func learnmap() {
 	ff.Println("process private method")
@@ -29,4 +41,17 @@ func LearnDefer() {
 		defer ff.Println(i)
 	}
 	ff.Println("end")
+}
+
+// 结构体
+type Struct_Member struct {
+	Id int
+	// 小写不可访问 私有
+	name string
+	age  int
+}
+
+func InitMember() {
+	member := Struct_Member{1, "fyf", 18}
+	ff.Println(member)
 }
