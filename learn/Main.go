@@ -3,6 +3,7 @@ package main
 // 引用自定义包
 import (
 	"fmt"
+	method "go_baselearn/learn/methods"
 	"go_baselearn/learn/unit"
 )
 
@@ -23,5 +24,7 @@ func main() {
 	var member unit.Struct_Member
 	member.Id = 5
 	fmt.Println("member id:", member.Id)
-
+	// 返回多参数
+	H,N:=method.MoreReturn();
+	fmt.Println(H,N)
 }
