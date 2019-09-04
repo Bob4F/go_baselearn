@@ -40,5 +40,7 @@ func main() {
 	unit.Factorial()
 	// 递归：斐波那契数列
 	unit.Fibonacci()
+	//
+	unit.PublicGetUserName()
 
 }
