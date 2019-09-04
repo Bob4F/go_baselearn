@@ -39,5 +39,6 @@ func main() {
 	// 递归：阶乘
 	unit.Factorial()
 	// 递归：斐波那契数列
+	unit.Fibonacci()
 
 }
