@@ -5,6 +5,7 @@ import (
 	"fmt"
 	method "go_baselearn/learn/methods"
 	"go_baselearn/learn/unit"
+
 )
 
 /*
@@ -27,12 +28,12 @@ func main() {
 	// 返回多参数
 	H, N := method.MoreReturn()
 	fmt.Println(H, N)
-
 	jsonmap := make(map[string]int)
 	method.Method3("key", 1, 2, jsonmap)
 	fmt.Println("JSONMAP", jsonmap["key"])
-
 	// 数组
 	unit.Arr()
 
+	unit.LearnRangeArr()
+	unit.LearnRangeMap()
 }

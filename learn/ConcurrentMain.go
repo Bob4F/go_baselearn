@@ -10,9 +10,7 @@ func main() {
 
 	//go concurrent.Say("HELLO")
 	//concurrent.Say("world")
-
 	learnchannel()
-
 	fmt.Println("start for channel")
 	channel1 := make(chan int, 10) // 缓冲10
 	concurrent.Channel2(cap(channel1), channel1)
