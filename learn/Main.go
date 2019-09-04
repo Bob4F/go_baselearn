@@ -42,5 +42,6 @@ func main() {
 	unit.Fibonacci()
 	//
 	unit.PublicGetUserName()
+	unit.Pointer()
 
 }
