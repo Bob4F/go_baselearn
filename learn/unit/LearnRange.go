@@ -26,10 +26,11 @@ func LearnRangeArr(){
 	}
 }
 
-
+// 循环map集合
 func LearnRangeMap(){
 	println("Start Method LearnRangeMap")
 	hashmap := map[string]string{"a":"apple","b":"banana"}
+	// key /value：=range map
 	for k,v :=range hashmap {
 		fmt.Printf("%s -> %s\n",k,v)
 	}
