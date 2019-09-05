@@ -47,19 +47,16 @@ database/sql 首先是 Go 标准库提供的一个包，用于和 SQL/SQL-Like �
 database/sql 提供的是抽象概念，和具体数据库无关  
 具体的数据库实现，由驱动来做，这样可以很方便的更换数据库
 
-```
-
 该包提供了一些类型（概括性的），每个类型可能包括一个或多个概念。
-
-+ DB  
+1.DB  
 sql.DB 类型代表了一个数据库。这点和很多其他语言不同，它并不代表一个到数据库的具体连接，而是一个能操作的数据库对象，具体的连接在内部通过连接池来管理，对外不暴露。这点是很多人容易误解的：每一次数据库操作，都产生一个 sql.DB 实例，操作完 Close。
-+ Results  
+2.Results  
 定义了三种结果类型：sql.Rows、sql.Row 和 sql.Result，分别用于获取多个多行结果、一行结果和修改数据库影响的行数（或其返回last insert id）。
-+ Statements  
+3.Statements  
 sql.Stmt 代表一个语句，如：DDL、DML等。
-+ Transactions  
+4.Transactions  
 sql.Tx 代表带有特定属性的一个事务。
-```
+
 mysql 的驱动：github.com/go-sql-driver/mysql
 ```
 
