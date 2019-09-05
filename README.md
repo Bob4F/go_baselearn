@@ -9,10 +9,10 @@ Go 的基础学习
 + 基础数据 ：
 string ，int ，float，map，bool ，slice   
 +  go / 并发：  
- go关键字
+ go 关键字
 ```cassandraql
 go关键字开启 goroutine 即可  
-goroutine 是轻量级线程，goroutine 的调度是由 Golang 运行时进行管理的。
+goroutine 是轻量级线程，goroutine(协程) 的调度是由 Golang 运行时进行管理的。
 ```
 channel / 通道 实现线程间通信数据结构
 ```cassandraql
@@ -37,6 +37,10 @@ v := <-ch  // 从 ch 接收数据  并把值赋给 v
 获取变量的指针  
 指针变量赋值  
 获取指针变量对应的值
+
+## 09-05
++ Go 错误处理
++ I/O
 
 
 
