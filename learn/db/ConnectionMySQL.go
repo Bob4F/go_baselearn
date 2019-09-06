@@ -17,7 +17,7 @@ import (
 // 并且查询
 func FirstConnectionMySQL(){
 
-	db,err := sql.Open("mysql","root:123456@tcp(47.92.86.79:3306)/app_ezblock_20190222?charset=utf8")
+	db,err := sql.Open("mysql","root:123456@tcp(119.3.222.192:3306)/go_db?charset=utf8")
 
 	if err != nil {
 		fmt.Println("firstConnectionMySQL Error INFO:",err)
@@ -25,19 +25,20 @@ func FirstConnectionMySQL(){
 	}
 	var (
 		id   int
+		name string
 	)
 	// 查询用户id
-	rows,sqlerr := db.Query("select id from ezblock_member")
+	rows,sqlerr := db.Query("select id,name from test_table")
 	if sqlerr != nil {
 		log.Fatal(err)
 	}
 	defer rows.Close()
 	for rows.Next() {
-		err := rows.Scan(&id)
+		err := rows.Scan(&id,&name)
 		if err != nil {
 			log.Fatal(err)
 		}
-		log.Println("id:",id)
+		log.Println("id:",id,",name:",name)
 	}
 	err = rows.Err()
 	if err != nil {
