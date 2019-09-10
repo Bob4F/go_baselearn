@@ -8,6 +8,7 @@ Go 的基础学习
 + 基础语法 for / if   
 + 基础数据 ：
 string ，int ，float，map，bool ，slice   
+`未使用的局部变量会编译出错，全局变量不报错`
 +  go / 并发：  
  go 关键字
 ```cassandraql

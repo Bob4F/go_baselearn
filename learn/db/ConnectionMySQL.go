@@ -1,4 +1,4 @@
-package db
+package main
 /*
    Go 学习 数据库操作
    database/sql 是Go 标准库提供的package 用于Sql和SQL-like 的通讯
@@ -9,8 +9,9 @@ package db
 import (
 	"database/sql"
 	"fmt"
-	 _ "github.com/go-sql-driver/mysql"
+	_ "github.com/go-sql-driver/mysql"
 	"log"
+	// mysql的封装
 )
 
 // 第一次连接MySQL
@@ -51,3 +52,4 @@ func FirstConnectionMySQL(){
 	// 关闭
 	defer db.Close()
 }
+

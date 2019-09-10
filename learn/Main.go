@@ -3,7 +3,6 @@ package main
 // 引用自定义包
 import (
 	"fmt"
-	"go_baselearn/learn/db"
 	method "go_baselearn/learn/methods"
 	"go_baselearn/learn/unit"
 )
@@ -44,7 +43,4 @@ func main() {
 	unit.PublicGetUserName()
 	unit.Pointer()
     unit.ThrowException()
-
-	db.FirstConnectionMySQL()
-
 }
