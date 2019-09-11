@@ -1,8 +1,6 @@
 # go_baselearn
 Go 的基础学习   
-预期时间一周  
-开始时间:2019-09-03  
-结束时间:2019-09-08
+
 
 ## 2019-09-03
 + 基础语法 for / if   
@@ -60,6 +58,9 @@ sql.Tx 代表带有特定属性的一个事务。
 
 mysql 的驱动：github.com/go-sql-driver/mysql
 ```
+
+
+# Go Web 
 
 
 
