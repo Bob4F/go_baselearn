@@ -11,9 +11,11 @@ func main() {
 }
 
 func longestPalindrome(s string)string{
-	if len(s)  <= 1  {
+	length := len(s)
+	// 边界条件
+	if length  <= 1  {
 		return s
-	}else if len(s)==2  && s[0]!=s[1]{
+	}else if length==2 && s[0]!=s[1]{
 		return string(s[0])
 	}
 	
