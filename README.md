@@ -64,4 +64,4 @@ mysql 的驱动：github.com/go-sql-driver/mysql
 [第一个web应用](https://github.com/lucasIsfyf/go_baselearn/blob/master/learn/web/FirstWebApp.go)
 
 # 算法 
-+ [动态规划](https://github.com/lucasIsfyf/go_baselearn/tree/master/learn/algorithm/dynamicplanning)
++ [动态规划](https://github.com/lucasIsfyf/go_baselearn/tree/master/learn/algorithm/dynamicprogramming)
