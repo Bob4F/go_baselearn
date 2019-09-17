@@ -15,10 +15,17 @@
 答案是4，你不可能在重新通过 1+1+1+1得到4 而是在3的基础上+1    
 这就是动态规划，记住求过的解来节省时间  
 ```
-
 ## 算法案例
-[最长回文子串](https://github.com/lucasIsfyf/go_baselearn/blob/master/learn/algorithm/dynamicprogramming/LongestPalindrome.go)
 
 
 ## 参考文献
 [算法-动态规划 Dynamic Programming--从菜鸟到老鸟](https://blog.csdn.net/u013309870/article/details/75193592): 强烈推荐
+
+# 中心扩散算法
+顾名思义就是以某一个位置为中心，向周围扩散，直到满足条件或到达边界
+
+
+## 算法案例
+[最长回文子串](https://github.com/lucasIsfyf/go_baselearn/blob/master/learn/algorithm/中心扩散算法/LongestPalindrome.go)
+用时 0ms/2.3mb
+

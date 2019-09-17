@@ -35,7 +35,6 @@ func factorial(n uint64) (result uint64) {
 	// 结束条件
 	if ( n > 0 ) {
 		result = n * factorial(n-1)
-		// 其实这句话可以不用
 		return result
 	}
 	// 退出条件
