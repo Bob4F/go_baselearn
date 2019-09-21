@@ -17,15 +17,16 @@ func main() {
 	//SelectIds()
 	SelectNames()
 	//SelectData()
-	id := InsertData("Jack")
-	SelectNames()
-	update("alibaba",id)
-	deleteResult := DeleteDataById(3)
-	if deleteResult > 0{
-		fmt.Println("删除成功")
-	} else {
-		fmt.Println("删除失败")
-	}
+	//id := InsertData("Jack")
+	//SelectNames()
+	//update("alibaba",id)
+	//deleteResult := DeleteDataById(3)
+	//if deleteResult > 0{
+	//	fmt.Println("删除成功")
+	//} else {
+	//	fmt.Println("删除失败")
+	//}
+	transactionDemo()
 }
 
 // 全局数据库变量 DB
@@ -49,7 +50,7 @@ func InsertData(name string)int{
 		fmt.Println("exec failed, ", err)
 		return 0
 	}
-	id, err := r.LastInsertId()
+	id, err := r.LastInsertId() // get insert data
 	if err != nil {
 		fmt.Println("exec failed, ", err)
 		return 0
@@ -118,4 +119,30 @@ func DeleteDataById(id int)int64{
 		fmt.Println("rows failed, ",err)
 	}
 	return row
+}
+
+
+func transactionDemo(){
+	// 开始事务
+	conn,err :=Db.Begin()
+	if err!=nil {
+		fmt.Println("begin failed :", err)
+		return
+	}
+	r,err:=conn.Exec("INSERT INTO test_table (id,name) VALUES (?,?)",0,"demo")
+	if err!=nil {
+		fmt.Println("exec failed, ",err)
+		// 回滚
+		conn.Rollback()
+		return
+	}
+	id,err:=r.LastInsertId()
+	if err!=nil {
+		fmt.Println("LastInsertId failed, ",err)
+		conn.Rollback()
+		return
+	}
+	fmt.Println("insert succ id :",id)
+	// 提交
+	conn.Commit()
 }
