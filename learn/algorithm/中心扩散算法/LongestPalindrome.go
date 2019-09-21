@@ -13,6 +13,7 @@ func main() {
 }
 
 func longestPalindrome(s string)string{
+	//length := len(s)
 	if len(s) < 2 {
 		return s
 	}

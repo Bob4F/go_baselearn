@@ -45,9 +45,7 @@ func FirstConnectionMySQL(){
 	if err != nil {
 		log.Fatal(err)
 	}
-
-
-
+	Db.Exec("");
 	fmt.Println("PING INFO:",db.Ping())
 	// 关闭
 	defer db.Close()
