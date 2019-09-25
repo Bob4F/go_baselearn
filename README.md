@@ -60,8 +60,8 @@ mysql 的驱动：github.com/go-sql-driver/mysql
 ```
 
 
-# Go Web 
+## Go Web 
 [第一个web应用](https://github.com/lucasIsfyf/go_baselearn/blob/master/learn/web/FirstWebApp.go)
 
-# 算法 
+## 算法 
 + [总纲](https://github.com/lucasIsfyf/go_baselearn/tree/master/learn/algorithm)

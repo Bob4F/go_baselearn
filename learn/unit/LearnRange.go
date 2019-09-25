@@ -1,4 +1,4 @@
-package unit
+package main
 /*
   Go  Range 范围
   range关键字用于for循环中 迭代数组(array),slice,channel,map

@@ -1,4 +1,4 @@
-package unit
+package main
 
 // 自命名包ff
 import ff "fmt"

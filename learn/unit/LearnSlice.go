@@ -1,4 +1,4 @@
-package unit
+package main
 
 /*
  Go 切片（Slice）

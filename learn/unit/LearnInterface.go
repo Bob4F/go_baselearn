@@ -1,4 +1,4 @@
-package unit
+package main
 /*
   Go语言学习 接口 / interface
  */

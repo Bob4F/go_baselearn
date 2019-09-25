@@ -1,4 +1,4 @@
-package unit
+package main
 /*
   Go 指针学习
   变量是使用方便的占位符，是应用计算机内存地址

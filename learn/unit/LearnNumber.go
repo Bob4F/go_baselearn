@@ -1,4 +1,4 @@
-package unit
+package main
 
 /*
    Go 数组 长度不可变

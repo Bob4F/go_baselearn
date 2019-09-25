@@ -10,7 +10,7 @@ import (
  */
 func main() {
 	//fmt.Println("result:",longestPalindrome("acccccid"))
-	fmt.Println(5/2)
+	fmt.Println(5/2)// result = 2
 	fmt.Println("result:",longestPalindrome("abcba"))
 }
 
