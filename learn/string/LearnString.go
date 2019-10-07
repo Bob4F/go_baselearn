@@ -21,3 +21,5 @@ func checkString(){
 	fmt.Println(strings.ContainsAny("foo", ""))// false
 	fmt.Println(strings.ContainsAny("", ""))//false
 }
+
+/* 根据索引获取对应值 */

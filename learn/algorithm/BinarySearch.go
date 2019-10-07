@@ -1,6 +1,5 @@
-/*
-	Go String
-
+/**
+	二分查找实现
  */
 package main
 
