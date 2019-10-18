@@ -3,13 +3,13 @@
  */
 package main
 
-import "fmt"
-
 func main() {
-	a := []int{1,2,4,5,6,7,8,9,10}
-	flag:=binary_search(a,5)
-	fmt.Println(flag)
+	//a := []int{1,2,4,5,6,7,8,9,10}
+	//flag:=binary_search(a,5)
+	//fmt.Println(flag)
 }
+
+
 
 /*
 	接受一个有序数组 和 元素
